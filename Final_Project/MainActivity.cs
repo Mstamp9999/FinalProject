@@ -49,8 +49,8 @@ namespace Final_Project
                 HidePage(this);
             };
 
-            var ThirdbackButton = FindViewById<Button>(Resource.Id.button8);
-            ThirdbackButton.Click += delegate {
+            var SecondbackButton = FindViewById<Button>(Resource.Id.button8);
+            SecondbackButton.Click += delegate {
                 ShowNextPage(this);
                 HideBack(this);
                 HidePage(this);
@@ -67,6 +67,12 @@ namespace Final_Project
         {
             var FirstPage = Appear.FindViewById<TextView>(Resource.Id.textView2);
             FirstPage.Visibility = Android.Views.ViewStates.Gone;
+        }
+
+        public static void HideBack(Activity Appear)
+        {
+            var FirstBack = Appear.FindViewById<Button>(Resource.Id.button3);
+            FirstBack.Visibility = Android.Views.ViewStates.Gone;
         }
 
         public static void HideTitle(Activity activity)
