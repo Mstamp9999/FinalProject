@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+    <Button
+        p1:text="Start"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/button1"
+        p1:clickable="true" />
+    <TextView
+        p1:layout_width="match_parent"
+        p1:layout_below="@id/button1"
+        p1:id="@+id/Title"
+        p1:text="Minecraft Walkthrough"
+        p1:layout_height="match_parent"
+        p1:layout_marginTop="120px"
+        style="@style/Theme.Custom"
+        p1:visibility="gone" />
+    <Button
+        p1:text="Back"
+        p1:layout_width="350px"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/button1"
+        p1:id="@+id/button3"
+        p1:layout_marginLeft="15px"
+        p1:clickable="true" />
+    <Button
+        p1:text="Next"
+        p1:layout_width="350px"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/button1"
+        p1:id="@+id/button5"
+        p1:layout_marginLeft="400px" />
+    <Button
+        p1:text="Next"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/button1"
+        p1:id="@+id/button6"
+        p1:layout_marginLeft="400px"
+        p1:visibility="gone" />
+    <Button
+        p1:text="Next"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/button1"
+        p1:id="@+id/button7"
+        p1:layout_marginLeft="400px"
+        p1:visibility="gone" />
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/relativeLayout2"
+        p1:layout_marginTop="190px">
+        <Space
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/space2" />
+        <Space
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/space1" />
+        <TextView
+            p1:text="Survival Mode: First thing you should do when starting a new game is to get materials to build some weapons, some armor, and a house to shelter yourself. There are Three levels Peacefull, Normal, and hard if you choose peacefull you don't have to worry about being blown up by a creeper so you could take your time gathering materials for your house, weapons, and armor but there are materials that you can't get while in peacefull mode though. Like bones from skeletons, strings form spiders, slime for slime cubes, and ender pearls."
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView2"
+            p1:visibility="gone"
+            p1:layout_marginTop="130px" />
+        <TextView
+            p1:text="Creative Mode: In creative mode you have free reign over what you want to do you can build anything you imagine or create stuff that are from movies, or other games."
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView3"
+            p1:layout_marginTop="150px"
+            p1:visibility="gone" />
+        <TextView
+            p1:text="Difficulty: Depending on the difficulty you choose there is  two things you can do either choose peacefulu so you can get every material that you can get and arm yourself build a house, a farm then you could go and change the difficulty so you can survive against creepers, zombies and enderman."
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView4"
+            p1:layout_marginTop="50px"
+            p1:visibility="gone" />
+    </RelativeLayout>
+    <Button
+        p1:text="Back"
+        p1:layout_width="350px"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/button1"
+        p1:id="@+id/button8" />
+</RelativeLayout>
