@@ -37,7 +37,7 @@
         p1:layout_marginLeft="400px" />
     <Button
         p1:text="Next"
-        p1:layout_width="wrap_content"
+        p1:layout_width="350px"
         p1:layout_height="wrap_content"
         p1:layout_below="@id/button1"
         p1:id="@+id/button6"
