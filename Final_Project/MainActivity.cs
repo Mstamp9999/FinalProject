@@ -42,6 +42,7 @@ namespace Final_Project
             SecondnextButton.Click += delegate {
                 ShowNextPage(this);
                 ShowThirdBack(this);
+                ShowThirdNext(this);
                 HidePage(this);
                 HideSecondBack(this);
                 HideSecondNext(this);
@@ -77,6 +78,7 @@ namespace Final_Project
             ThirdbackButton.Click += delegate {
                 ShowNextPage(this);
                 HideThirdBack(this);
+                HideThirdPage(this);
                 HideThirdNext(this);
                 ShowSecondBack(this);
                 ShowSecondNext(this);
