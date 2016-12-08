@@ -17,7 +17,15 @@ namespace Final_Project
             var startButton = FindViewById<Button>(Resource.Id.button1);
             startButton.Click += delegate {
                 ShowTitle(this);
+                ShowNext(this);
+                ShowBack(this);
                 HidePage(this);
+                HideSecondBack(this);
+                HideThirdBack(this);
+                HideSecondNext(this);
+                HideThirdNext(this);
+                HideNextPage(this);
+                HideThirdPage(this);
             };
 
             var nextButton = FindViewById<Button>(Resource.Id.button5);
@@ -25,22 +33,28 @@ namespace Final_Project
                 HideTitle(this);
                 ShowPage(this);
                 HideNext(this);
+                HideBack(this);
+                ShowSecondBack(this);
                 ShowSecondNext(this);
             };
 
             var SecondnextButton = FindViewById<Button>(Resource.Id.button6);
             SecondnextButton.Click += delegate {
                 ShowNextPage(this);
+                ShowThirdBack(this);
                 HidePage(this);
+                HideSecondBack(this);
                 HideSecondNext(this);
-                ShowThirdNext(this);
-                HideNextPage(this);
             };
 
             var ThirdnextButton = FindViewById<Button>(Resource.Id.button7);
             ThirdnextButton.Click += delegate {
                 ShowThirdPage(this);
                 HideNextPage(this);
+                HideSecondBack(this);
+                HideSecondNext(this);
+                ShowThirdNext(this);
+                ShowThirdBack(this);
             };
 
             var backButton = FindViewById<Button>(Resource.Id.button3);
@@ -51,28 +65,76 @@ namespace Final_Project
 
             var SecondbackButton = FindViewById<Button>(Resource.Id.button8);
             SecondbackButton.Click += delegate {
+                ShowPage(this);
+                HideSecondBack(this);
+                HideSecondNext(this);
+                ShowBack(this);
+                ShowNext(this);
+                HideNextPage(this);
+            };
+
+            var ThirdbackButton = FindViewById<Button>(Resource.Id.button9);
+            ThirdbackButton.Click += delegate {
                 ShowNextPage(this);
-                HideBack(this);
-                HidePage(this);
+                HideThirdBack(this);
+                HideThirdNext(this);
+                ShowSecondBack(this);
+                ShowSecondNext(this);
             };
         }
 
-        public static void ShowTitle(Activity activity)
+        public static void ShowTitle(Activity Appear)
         {
-            var MainTitle = activity.FindViewById<TextView>(Resource.Id.Title);
+            var MainTitle = Appear.FindViewById<TextView>(Resource.Id.Title);
             MainTitle.Visibility = Android.Views.ViewStates.Visible;
         }
 
-        public static void HidePage(Activity Appear)
+        public static void HidePage(Activity activity)
         {
-            var FirstPage = Appear.FindViewById<TextView>(Resource.Id.textView2);
+            var FirstPage = activity.FindViewById<TextView>(Resource.Id.textView2);
             FirstPage.Visibility = Android.Views.ViewStates.Gone;
+        }
+
+        public static void ShowBack(Activity Appear)
+        {
+            var FirstBackButton = Appear.FindViewById<Button>(Resource.Id.button3);
+            FirstBackButton.Visibility = Android.Views.ViewStates.Visible;
         }
 
         public static void HideBack(Activity Appear)
         {
-            var FirstBack = Appear.FindViewById<Button>(Resource.Id.button3);
-            FirstBack.Visibility = Android.Views.ViewStates.Gone;
+            var FirstBackButton = Appear.FindViewById<Button>(Resource.Id.button3);
+            FirstBackButton.Visibility = Android.Views.ViewStates.Gone;
+        }
+
+        public static void HideSecondBack(Activity activity)
+        {
+            var SecondBackButton = activity.FindViewById<Button>(Resource.Id.button8);
+            SecondBackButton.Visibility = Android.Views.ViewStates.Gone;
+        }
+
+        public static void ShowSecondBack(Activity Appear)
+        {
+            var SecondBackButton = Appear.FindViewById<Button>(Resource.Id.button8);
+            SecondBackButton.Visibility = Android.Views.ViewStates.Visible;
+        }
+
+        public static void HideThirdBack(Activity activity)
+        {
+            var ThirdBackButton = activity.FindViewById<Button>(Resource.Id.button9);
+            ThirdBackButton.Visibility = Android.Views.ViewStates.Gone;
+        }
+
+        public static void HideThirdNext(Activity activity)
+        {
+            var ThirdNextButton = activity.FindViewById<Button>(Resource.Id.button7);
+            ThirdNextButton.Visibility = Android.Views.ViewStates.Gone;
+        }
+
+        public static void ShowThirdBack(Activity Appear)
+        {
+            var ThirdBackButton = Appear.FindViewById<Button>(Resource.Id.button9);
+            ThirdBackButton.Visibility = Android.Views.ViewStates.Visible;
         }
 
         public static void HideTitle(Activity activity)
@@ -85,6 +147,12 @@ namespace Final_Project
         {
             var FirstNextButton = activity.FindViewById<Button>(Resource.Id.button5);
             FirstNextButton.Visibility = Android.Views.ViewStates.Gone;
+        }
+
+        public static void ShowNext(Activity Appear)
+        {
+            var FirstNextButton = Appear.FindViewById<Button>(Resource.Id.button5);
+            FirstNextButton.Visibility = Android.Views.ViewStates.Visible;
         }
 
         public static void HideSecondNext(Activity activity)
@@ -126,6 +194,12 @@ namespace Final_Project
         {
             var ThirdPage = Appear.FindViewById<TextView>(Resource.Id.textView4);
             ThirdPage.Visibility = Android.Views.ViewStates.Visible;
+        }
+
+        public static void HideThirdPage(Activity activity)
+        {
+            var ThirdPage = activity.FindViewById<TextView>(Resource.Id.textView4);
+            ThirdPage.Visibility = Android.Views.ViewStates.Gone;
         }
     }
 }

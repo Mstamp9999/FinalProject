@@ -97,6 +97,9 @@ namespace Final_Project
 			// aapt resource value: 0x7f07000d
 			public const int button8 = 2131165197;
 			
+			// aapt resource value: 0x7f07000e
+			public const int button9 = 2131165198;
+			
 			// aapt resource value: 0x7f070000
 			public const int relativeLayout1 = 2131165184;
 			

@@ -67,7 +67,7 @@
             p1:layout_height="wrap_content"
             p1:id="@+id/space1" />
         <TextView
-            p1:text="Survival Mode: First thing you should do when starting a new game is to get materials to build some weapons, some armor, and a house to shelter yourself. There are Three levels Peacefull, Normal, and hard if you choose peacefull you don't have to worry about being blown up by a creeper so you could take your time gathering materials for your house, weapons, and armor but there are materials that you can't get while in peacefull mode though. Like bones from skeletons, strings form spiders, slime for slime cubes, and ender pearls."
+            p1:text="Survival Mode: First thing you should do when starting a new game is to get materials to build some weapons, some armor, and a house to shelter yourself. There are Three levels Peacefull, Normal, and hard if you choose peacefull you don't have to worry about being blown up by a creeper so you could take your time gathering materials for your house, weapons, and armor but there are materials that you can't get while in peacefull mode though. Like bones from skeletons, strings form spiders, slime from slime cubes, and ender pearls."
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="match_parent"
@@ -96,5 +96,13 @@
         p1:layout_width="350px"
         p1:layout_height="wrap_content"
         p1:layout_below="@id/button1"
-        p1:id="@+id/button8" />
+        p1:id="@+id/button8"
+        p1:visibility="gone" />
+    <Button
+        p1:text="Back"
+        p1:layout_width="350px"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/button1"
+        p1:id="@+id/button9"
+        p1:visibility="gone" />
 </RelativeLayout>
